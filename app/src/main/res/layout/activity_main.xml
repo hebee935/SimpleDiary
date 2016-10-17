@@ -9,8 +9,20 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.eunbee.simplediary.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <DatePicker
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:calendarViewShown="false"/>
+    <EditText
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:lines="8"/>
+    <Button
+        android:id="@+id/but_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_but"
+        android:enabled="false"/>
 </RelativeLayout>
